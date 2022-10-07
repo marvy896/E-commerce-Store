@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Shoes",
+        "price": 10.99,
+        "imgUrl": "./imagepage/shoes.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Shirts",
+        "price": 78.99,
+        "imgUrl": "./imagepage/shirts.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Trousers",
+        "price": 60.99,
+        "imgUrl": "./imagepage/trousers.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Gowns",
+        "price": 90.99,
+        "imgUrl": "./imagepage/Gowns.jpg"
+    }
+
+]

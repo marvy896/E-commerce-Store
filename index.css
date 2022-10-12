@@ -32,6 +32,8 @@ body {
   color: var(var(--color));
   font-weight: var(--font-weight);
   transition: background-color 0.3s ease-in-out, color 0.6s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
 body.light {
   --background-color: var(--white);
@@ -336,4 +338,51 @@ color: white;
 border-radius: 10px;
 height: 200%;
 width: 400px;
+}
+
+.Cartpage{
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: auto;
+  border-radius: 20px;
+  color: var(--text-color);
+  border-color: black;
+  border-style: double;
+  padding: 10px;
+  align-items: center;
+  place-content: center;
+  margin: 20px;
+  margin-left: 70px;
+}
+.carts{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.cartdisplay{
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  gap: 1rem;
+}
+.productDisplay{
+  color: var(--text-color);
+  width: 200px;
+  background-color:rgb(255, 197, 5);
+  border-color: black;
+  border-style: double;
+  padding: 10px;
+  align-items: center;
+  place-content: center;
+  margin: 20px;
+}
+.prodDisplay{
+  color: var(--text-color);
+width: 180px;
+height: auto;
+
 }

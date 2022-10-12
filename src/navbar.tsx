@@ -2,8 +2,24 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Darkmode from "../src/components/darkmode";
 import { Container, Nav, Navbar as NavbarBS } from "react-bootstrap";
+import useCart from "./hooks/hooks";
 
-export default function Navbar() {
+
+type StoreItemProps = {
+  id: number;
+  name: string;
+  price: number;
+  imgUrl: string;
+};
+
+export default function Navbar({id,
+  name,
+  price,
+  imgUrl}:StoreItemProps) {
+    
+let cartinNav= useCart()
+let quantityCart = cartinNav.getTotalquantity()
+
   return (
     <NavbarBS className="container" >
       <Container className="Navbar2">
@@ -18,14 +34,14 @@ export default function Navbar() {
           </Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link to="/home" as={NavLink}>
+          <Nav.Link to="/cartpage" as={NavLink}>
             Cart
           </Nav.Link>
         </Nav>
       </Container>
       <div className="navup">
       <button className="buttonNav">
-          <div className="rounded-circle">0</div>
+          <div className="rounded-circle">{quantityCart}</div>
         </button>
         <Darkmode />
       </div>

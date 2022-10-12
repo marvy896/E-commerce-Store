@@ -16,6 +16,6 @@
         "**/*spec.ts"
     ], "include"        : [
         "src/**/*"
-    ]
+, "nav.tsx"    ]
 
 }

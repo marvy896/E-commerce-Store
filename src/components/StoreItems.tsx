@@ -1,30 +1,37 @@
 import React from "react";
 import useCart from '../hooks/hooks';
 
+
 type StoreItemProps = {
   id: number;
-  name: string;
+  nameProduct: string;
   price: number;
   imgUrl: string;
 };
 export default function StoreItems({
   id,
-  name,
+  nameProduct,
   price,
   imgUrl,
 }: StoreItemProps) {
   // let quantity = 0;
   let carts = useCart()
-  let quantity = carts.getQuantity(id)
+  let quantity = carts.getQuantity(id, nameProduct)
   let addToCart =() =>{
-    carts.increaseQuantity(id)
+    carts.increaseQuantity(id, nameProduct)
+  }
+  let removefromCart = () =>{
+    carts.decreaseQuantity(id, nameProduct)
+  }
+  let removeProduct =()=>{
+    carts.removeProduct(id)
   }
   return (
     <div className="store-container">
       {/* <img src={imgUrl} className="imgStore" /> */}
       <div className="imgStore" style={{backgroundImage: `url(${imgUrl})`}}></div>
       <div className="prices">
-        <h3>{name}</h3>
+        <h3>{nameProduct}</h3>
         <h3>${price}</h3>
       </div>
       <div>
@@ -34,12 +41,12 @@ export default function StoreItems({
         ) : (
           <div>
             <div className="pricesbutton">
-              <button>-</button>
+              <button onClick={removefromCart}>-</button>
               <div> <span>{quantity}</span> in cart</div>
-              <button>+</button>
+              <button onClick={addToCart}>+</button>
             </div>
             <div className="divremovebtn">
-              <button className="removebtn">Remove</button></div>
+              <button className="removebtn"onClick={removeProduct}>Remove</button></div>
           </div>
         )}
       </div>

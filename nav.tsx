@@ -1,9 +1,12 @@
 import React from "react";
 import Darkmode from "./src/components/darkmode";
 import {Link} from "react-router-dom"
-
+import useCart from "./src/hooks/hooks";
+import Cartpage from './src/cartpage';
 
 export default function Nav() {
+  let cartinNav= useCart()
+let quantityCart = cartinNav.getTotalquantity()
   return (
     <div  className="homepage">
       <nav className="Nav">
@@ -18,17 +21,17 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link to="/productCard">Category</Link>
+            <Link to="/productCard">Product Category</Link>
           </li>
           <li>
-            <Link to="/">Promo</Link>
+            <Link to="/cartpage">Cartpage</Link>
           </li>
           <li>
             <Link to="/">About</Link>
           </li>
         </ul>
         <button className="buttonNav">
-          <div className="rounded-circle">3</div>
+          <div className="rounded-circle">{quantityCart}</div>
         </button>
       </nav>
       

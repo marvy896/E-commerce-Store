@@ -1,25 +1,31 @@
 [
     {
         "id": 1,
-        "name": "Shoes",
+        "nameProduct": "Shoes",
         "price": 10.99,
         "imgUrl": "./imagepage/shoes.jpg"
     },
     {
         "id": 2,
-        "name": "Shirts",
+        "nameProduct": "Shirts",
         "price": 78.99,
         "imgUrl": "./imagepage/shirts.jpg"
     },
     {
         "id": 3,
-        "name": "Trousers",
+        "nameProduct": "Trousers",
         "price": 60.99,
         "imgUrl": "./imagepage/trousers.jpg"
     },
     {
         "id": 4,
-        "name": "Gowns",
+        "nameProduct": "Gowns",
+        "price": 90.99,
+        "imgUrl": "./imagepage/Gowns.jpg"
+    },
+    {
+        "id": 4,
+        "nameProduct": "Gowns",
         "price": 90.99,
         "imgUrl": "./imagepage/Gowns.jpg"
     }

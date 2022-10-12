@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from './nav';
+import cartpage from './src/cartpage';
 
 export default function Home() {
   return (

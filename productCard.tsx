@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './src/navbar'
+import Nav from './nav';
 // import {Col, Row} from "react-bootstrap"
 import  storeItems from './src/items.json';
 import StoreItems from './src/components/StoreItems';
@@ -8,10 +8,10 @@ import StoreItems from './src/components/StoreItems';
 export default function ProductCard() {
   return (
     <div>
-      <Navbar />
+      <Nav />
         <h2>Store</h2>
         <div className="store">
-        {storeItems.map((item: JSX.IntrinsicAttributes & { id: number; name: string; price: number; imgUrl: string; }) => (
+        {storeItems.map((item: JSX.IntrinsicAttributes & { id: number; nameProduct: string; price: number; imgUrl: string; }) => (
           <div key ={item.id}>
             <StoreItems {...item}/>
             </div>
@@ -21,3 +21,5 @@ export default function ProductCard() {
     
   )
 }
+
+

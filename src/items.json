@@ -24,10 +24,16 @@
         "imgUrl": "./imagepage/Gowns.jpg"
     },
     {
-        "id": 4,
-        "nameProduct": "Gowns",
-        "price": 90.99,
-        "imgUrl": "./imagepage/Gowns.jpg"
+        "id": 5,
+        "nameProduct": "Shirts",
+        "price": 70.99,
+        "imgUrl": "./imagepage/shirtss.jpg"
+    },
+    {
+        "id": 6,
+        "nameProduct": "Polo",
+        "price": 40.99,
+        "imgUrl": "./imagepage/polo.jpg"
     }
 
 ]

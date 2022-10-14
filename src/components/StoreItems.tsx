@@ -2,7 +2,7 @@ import React from "react";
 import useCart from '../hooks/hooks';
 
 
-type StoreItemProps = {
+export type StoreItemProps = {
   id: number;
   nameProduct: string;
   price: number;

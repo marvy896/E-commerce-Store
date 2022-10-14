@@ -61,6 +61,7 @@ word-wrap: break-word;
 font-size: 3rem;
 text-shadow: 0 0 3px black;
 align-content: center;
+justify-content: center;
 }
 
 
@@ -293,6 +294,9 @@ section{
  width: 400px;
  height: 200px;
 background-size: cover;
+border-radius: 20px;
+border-style: double;
+border-color: yellow;
 }
 .prices{
   display: flex;
@@ -384,5 +388,27 @@ width: 400px;
   color: var(--text-color);
 width: 180px;
 height: auto;
-
+}
+.prdouctCard{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  place-content: center;
+  margin-bottom: 20px;
+ 
+}
+.searchInput{
+  padding: 2px;
+  width: 300px;
+  background-color: var(--text-color);
+  /* text-transform: capitalize; */
+  border-radius: 20px;
+}
+.searchbtn{
+  padding: 4px;
+  width: 150px;
+  background-color: var(--text-color);
+  border-radius: 20px;
+  margin-top: 3px;
 }

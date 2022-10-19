@@ -269,11 +269,9 @@ section{
 .Navbar2 .Nav.Link{
   padding: 0;
   margin: 0;
-  
   display: flex;
   gap: 1rem;
   color: aqua;
-  
 } 
 .Nav.Link{
   text-decoration: none;
@@ -396,8 +394,73 @@ height: auto;
   align-items: center;
   place-content: center;
   margin-bottom: 20px;
- 
 }
+@media screen and (max-width: 900px) {
+  .container, .prdouctCard,.prodDisplay,.productDisplay,.cartbutton,.Nav.Link,
+  .store-container,
+  .imgStore,
+  .prices,
+  .pricesbutton,
+  .pricesbutton button,
+  .removebtn,
+  .divremovebtn{
+     width: 100%;
+     display: grid;
+    grid-template-columns: repeat(2,auto)
+  }
+}
+@media screen and (max-width: 600px) {
+  .container, .prdouctCard,.prodDisplay,.productDisplay,.cartbutton,.Nav.Link,
+  .store-container,
+  .imgStore,
+  .prices,
+  .pricesbutton,
+  .pricesbutton button,
+  .removebtn,
+  .divremovebtn{
+     width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cartdisplay{
+    width: 200%;
+     display: grid;
+    grid-template-columns: repeat(2,auto);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cartdisplay{
+    width: 200%;
+     display: grid;
+    grid-template-columns: repeat(1,auto);
+  }
+}
+@media screen and (max-width: 900px) {
+  .store{
+    width: 200%;
+     display: grid;
+    grid-template-columns: repeat(2,auto);
+  }
+}
+@media screen and (max-width: 600px) {
+  .store{
+    width: 100%;
+     display: grid;
+    grid-template-columns: repeat(1,auto);
+  }
+}
+@media screen and (max-width: 900px) {
+  .prices{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }}
+@media screen and (max-width: 600px) {
+.prices{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}}
 .searchInput{
   padding: 2px;
   width: 300px;
@@ -412,3 +475,151 @@ height: auto;
   border-radius: 20px;
   margin-top: 3px;
 }
+.checkout{
+ padding: 10px;
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 1000px;
+ border-color: black;
+ border-style: double;
+ border-radius: 10px;
+margin: 30px;
+}
+.checkoutGrid{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 2em;
+  justify-content: space-between;
+}
+.formcheck, input.formcheck{
+  padding: 5px;
+  border: 10px solid black ;
+  border-style:double;
+  width: 400px;
+}.formcheck >input{
+  margin-right: 3px;
+  width: calc(100% - 3px);
+}
+.checkout1{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  gap: 5em;
+  color: var(--text-color);
+}
+table{
+  width:400px ;
+}
+table,th, tr, td{
+  border: 3px;
+  /* width: 30px; */
+  border-style: double;
+  border-color: rgb(248, 126, 4);
+  padding: 5px;
+  color: var(--text-color);
+}
+.tableDiv{
+  padding: 7px;
+border: 3px solid black; 
+border-style:dotted;
+border-radius: 20px;
+}
+.btnDisplay{
+display: flex;
+flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ gap: 4em;
+}
+.productDisplay{
+  border-radius: 20px;
+}
+.productDisplay:hover{
+  background-color: aqua;
+}
+.productdisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btnBelow{
+  margin-top: 5px;
+  width:auto;
+  height: 40px;
+  background-color: var(--blue);
+  border-color: black;
+  border-radius: 15px;
+  border-style: double;
+  border-width: 4px;
+  color: white;
+}
+.data{
+  background: url("./images/payments.png")no-repeat;
+  background-size: cover;
+  background-size: 300px 50px;
+  width: 500px;
+  height: 100px;
+}
+.checkFooter{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 200px;
+}
+h5{
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5em;
+  place-content: center;
+}
+@media screen and (max-width: 900px) {
+  .searchInput,
+.searchbtn,
+.checkout,
+.checkout1,
+table,
+table,th, tr, td,
+.btnDisplay,
+.productdisplay,
+.btnBelow,
+.data,
+.checkFooter,
+h5{
+width: 100%;
+}}
+@media screen and (max-width: 600px) {
+  .searchInput,
+.searchbtn,
+.checkout,
+.checkout1,
+table,
+table,th, tr, td,
+.btnDisplay,
+.productDisplay,
+.productdisplay,
+.btnBelow,
+.data,
+.checkFooter,
+h5{
+  width: 100%;
+}}
+@media screen and (max-width: 900px) {
+  .Cartpage,.carts{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, auto);
+  }}
+@media screen and (max-width: 600px) {
+  .Cartpage,.carts{
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(1, auto);
+}}

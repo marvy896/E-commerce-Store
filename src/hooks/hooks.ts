@@ -4,6 +4,7 @@ type CARTS = {
   productId: number;
   quantity: number;
   productName: string;
+  price: number
 };
 
 const useCart = () => {
@@ -38,10 +39,13 @@ class cartsInteraction {
     this.setCartlog([...prd]);
   }
 
-  increaseQuantity(productId: number, productName:string) {
+  increaseQuantity(productId: number, productName:string, price:number) {
     let searchProduct = this.cartlog.find((x) => x.productId == productId && x.productName==productName);
     if (searchProduct == undefined) {
-      this.cartlog.push({productName, productId, quantity: 1});
+      this.cartlog.push({
+        productName, productId, quantity: 1,
+        price
+      });
     } else {
       searchProduct.quantity += 1;
     }
@@ -66,6 +70,13 @@ class cartsInteraction {
     //   total += this.cartlog[x]!.quantity;
     // }
     return total;
+  }
+  getTotalPrice(){
+    let total = 0
+    for (const cartsItem of this.cartlog){
+      total += cartsItem.price
+    }
+      return total.toFixed(2);
   }
 }
 

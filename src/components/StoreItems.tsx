@@ -18,7 +18,7 @@ export default function StoreItems({
   let carts = useCart()
   let quantity = carts.getQuantity(id, nameProduct)
   let addToCart =() =>{
-    carts.increaseQuantity(id, nameProduct)
+    carts.increaseQuantity(id, nameProduct, price)
   }
   let removefromCart = () =>{
     carts.decreaseQuantity(id, nameProduct)

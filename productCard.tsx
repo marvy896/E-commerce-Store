@@ -4,6 +4,7 @@ import Nav from "./nav";
 import storeItems from "./src/items.json";
 import StoreItems from "./src/components/StoreItems";
 import { StoreItemProps } from "./src/components/StoreItems";
+import { Link } from "react-router-dom";
 
 export default function ProductCard() {
   let [sortItems, setSortItems] = useState("")
@@ -49,7 +50,7 @@ export default function ProductCard() {
   let mappedArrays = maintext == "" ? storeItems : textDisplay
   SortPrd(mappedArrays);
   return (
-    <div>
+    <div className="productdisplay">
       <Nav />
       <div className="prdouctCard">
         <h2>Store</h2>
@@ -90,6 +91,11 @@ export default function ProductCard() {
           )
         )}
       </div>
+      <div>
+            <Link to="/cartpage">
+              <button className="btnBelow" type="button">Confirm Order!</button>
+            </Link>
+          </div>
     </div>
   );
 }

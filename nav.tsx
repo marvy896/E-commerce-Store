@@ -2,7 +2,7 @@ import React from "react";
 import Darkmode from "./src/components/darkmode";
 import {Link} from "react-router-dom"
 import useCart from "./src/hooks/hooks";
-import Cartpage from './src/cartpage';
+
 
 export default function Nav() {
   let cartinNav= useCart()
@@ -27,7 +27,7 @@ let quantityCart = cartinNav.getTotalquantity()
             <Link to="/cartpage">Cartpage</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/home">Admin</Link>
           </li>
         </ul>
         <button className="buttonNav">

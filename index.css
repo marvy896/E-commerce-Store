@@ -48,22 +48,21 @@ body.dark {
   --font-weight: 500;
   --image: url("./images/fashion2.jpg");
 }
-h1{
+h1 {
   color: var(--text-color);
   text-align: center;
   word-wrap: break-word;
   font-size: 5rem;
   text-shadow: 0 0 5px red;
 }
-h2{
-color: var(--text-color);
-word-wrap: break-word;
-font-size: 3rem;
-text-shadow: 0 0 3px black;
-align-content: center;
-justify-content: center;
+h2 {
+  color: var(--text-color);
+  word-wrap: break-word;
+  font-size: 3rem;
+  text-shadow: 0 0 3px black;
+  align-content: center;
+  justify-content: center;
 }
-
 
 .homepage {
   background-image: var(--image);
@@ -73,18 +72,18 @@ justify-content: center;
   margin: 0%;
   border-radius: 10px;
   align-items: center;
-  overflow:hidden;
+  overflow: hidden;
   position: flex;
   flex-direction: row;
 }
 @media screen and (max-width: 900px) {
   .homepage {
-     width: 100%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
   .homepage {
-     width: 100%;
+    width: 100%;
   }
 }
 
@@ -125,7 +124,7 @@ justify-content: center;
   border-radius: 30px;
   height: 30px;
 }
-.buttonNav{
+.buttonNav {
   background: transparent url("./images/cart.png") no-repeat;
   background-size: 30px 30px;
   width: 32px;
@@ -133,7 +132,7 @@ justify-content: center;
   border: none;
   position: relative;
 }
-.rounded-circle{
+.rounded-circle {
   background-color: red;
   background-size: 20px 20px;
   width: 16px;
@@ -148,44 +147,52 @@ justify-content: center;
   transform: translate(25%, 25%);
 }
 @media screen and (max-width: 900px) {
-  .Nav, .Nav ul,.Site-title,.Nav a,h1 {
-     width: 100%;
+  .Nav,
+  .Nav ul,
+  .Site-title,
+  .Nav a,
+  h1 {
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
-  .Nav, .Nav ul,.Site-title,.Nav a, hi {
-     width: 100%;
+  .Nav,
+  .Nav ul,
+  .Site-title,
+  .Nav a,
+  hi {
+    width: 100%;
   }
 }
-section{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.homeImage{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    gap: 10px;
-    align-items: center;
-    justify-items: flex-end;
+.homeImage {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  align-items: center;
+  justify-items: flex-end;
 }
 @media screen and (max-width: 900px) {
   .homeImage {
-     width: 80%;
-     display: grid;
-    grid-template-columns: repeat(2,auto)
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
   }
 }
 @media screen and (max-width: 600px) {
-  .homeImage{
-     width: 50%;
-     display: grid;
-    grid-template-columns: repeat(1,auto)
+  .homeImage {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
   }
 }
-.fashion1{
-  background:  url("./images/home1.jpg") no-repeat;
+.fashion1 {
+  background: url("./images/home1.jpg") no-repeat;
   background-size: 300px 400px;
   width: 300px;
   height: 400px;
@@ -193,8 +200,8 @@ section{
   border-style: dotted;
   border-color: black;
 }
-.fashion2{
-  background:  url("./images/home2.jpg") no-repeat;
+.fashion2 {
+  background: url("./images/home2.jpg") no-repeat;
   background-size: 300px 400px;
   width: 300px;
   height: 400px;
@@ -202,8 +209,8 @@ section{
   border-style: dotted;
   border-color: black;
 }
-.fashion3{
-  background:  url("./images/home3.jpg") no-repeat;
+.fashion3 {
+  background: url("./images/home3.jpg") no-repeat;
   background-size: 300px 400px;
   width: 300px;
   height: 400px;
@@ -211,7 +218,7 @@ section{
   border-style: dotted;
   border-color: black;
 }
-.fashionH2{
+.fashionH2 {
   padding: 10px;
   justify-content: center;
   color: antiquewhite;
@@ -222,34 +229,38 @@ section{
   border-color: black;
 }
 @media screen and (max-width: 900px) {
-  .fashion1, .fashion2, .fashion3 {
-     width: 100%;
+  .fashion1,
+  .fashion2,
+  .fashion3 {
+    width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
-  .fashion1, .fashion2, .fashion3{
-     width: 100%;
+  .fashion1,
+  .fashion2,
+  .fashion3 {
+    width: 100%;
   }
 }
-.fashionButton{
+.fashionButton {
   color: var(--text-color);
   background-color: blueviolet;
   width: 100px;
   height: 50px;
- margin-left: 40px;
+  margin-left: 40px;
 }
-.container{
+.container {
   width: 100% auto;
   height: 100px;
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   gap: 2rem;
   padding: 0 1rem;
   overflow: hidden;
   background-color: bisque;
 }
- .Navbar2{
+.Navbar2 {
   width: 100% auto;
   height: 100px;
   display: flex;
@@ -260,89 +271,89 @@ section{
   text-decoration: none;
   text-transform: none;
 }
-.navup{
+.navup {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
 
-.Navbar2 .Nav.Link{
+.Navbar2 .Nav.Link {
   padding: 0;
   margin: 0;
   display: flex;
   gap: 1rem;
   color: aqua;
-} 
-.Nav.Link{
+}
+.Nav.Link {
   text-decoration: none;
   list-style: none;
 }
-.store{
+.store {
   display: grid;
   grid-template-columns: repeat(2, auto);
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.store-container{
+.store-container {
   justify-content: center;
   align-items: center;
 }
-.imgStore{
- width: 400px;
- height: 200px;
-background-size: cover;
-border-radius: 20px;
-border-style: double;
-border-color: yellow;
+.imgStore {
+  width: 400px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 20px;
+  border-style: double;
+  border-color: yellow;
 }
-.prices{
+.prices {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.pricesbutton{
+.pricesbutton {
   padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   place-content: center;
   align-items: center;
-  gap:0.5rem;
+  gap: 0.5rem;
 }
-.pricesbutton button{
+.pricesbutton button {
   width: 40px;
   height: 40px;
   color: aliceblue;
   background-color: rgb(0, 140, 255);
   border-radius: 10px;
 }
-.removebtn{
-background-color: red;
-color: white;
-border-radius: 10px;
-height: 30px;
+.removebtn {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  height: 30px;
 }
-.divremovebtn{
+.divremovebtn {
   display: flex;
   flex-direction: row;
   justify-content: center;
   place-content: center;
   align-items: center;
 }
-.cartbuttonDiv{
+.cartbuttonDiv {
   width: 100px;
   height: 100% auto;
 }
-.cartbutton{
-background-color: rgb(0, 140, 255);
-color: white;
-border-radius: 10px;
-height: 200%;
-width: 400px;
+.cartbutton {
+  background-color: rgb(0, 140, 255);
+  color: white;
+  border-radius: 10px;
+  height: 200%;
+  width: 400px;
 }
 
-.Cartpage{
+.Cartpage {
   display: flex;
   flex-direction: column;
   width: 900px;
@@ -357,7 +368,7 @@ width: 400px;
   margin: 20px;
   margin-left: 70px;
 }
-.carts{
+.carts {
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -365,16 +376,16 @@ width: 400px;
   justify-content: center;
   align-items: center;
 }
-.cartdisplay{
+.cartdisplay {
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: center;
   gap: 1rem;
 }
-.productDisplay{
+.productDisplay {
   color: var(--text-color);
   width: 200px;
-  background-color:rgb(255, 197, 5);
+  background-color: rgb(255, 197, 5);
   border-color: black;
   border-style: double;
   padding: 10px;
@@ -382,128 +393,142 @@ width: 400px;
   place-content: center;
   margin: 20px;
 }
-.prodDisplay{
+.prodDisplay {
   color: var(--text-color);
-width: 180px;
-height: auto;
+  width: 180px;
+  height: auto;
 }
-.prdouctCard{
+.prdouctCard {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   place-content: center;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 900px) {
-  .container, .prdouctCard,.prodDisplay,.productDisplay,.cartbutton,.Nav.Link,
+  .container,
+  .prdouctCard,
+  .prodDisplay,
+  .productDisplay,
+  .cartbutton,
+  .Nav.Link,
   .store-container,
   .imgStore,
   .prices,
   .pricesbutton,
   .pricesbutton button,
   .removebtn,
-  .divremovebtn{
-     width: 100%;
-     display: grid;
-    grid-template-columns: repeat(2,auto)
-  }
-}
-@media screen and (max-width: 600px) {
-  .container, .prdouctCard,.prodDisplay,.productDisplay,.cartbutton,.Nav.Link,
-  .store-container,
-  .imgStore,
-  .prices,
-  .pricesbutton,
-  .pricesbutton button,
-  .removebtn,
-  .divremovebtn{
-     width: 100%;
-  }
-}
-@media screen and (max-width: 900px) {
-  .cartdisplay{
-    width: 200%;
-     display: grid;
-    grid-template-columns: repeat(2,auto);
-  }
-}
-@media screen and (max-width: 600px) {
-  .cartdisplay{
-    width: 200%;
-     display: grid;
-    grid-template-columns: repeat(1,auto);
-  }
-}
-@media screen and (max-width: 900px) {
-  .store{
-    width: 200%;
-     display: grid;
-    grid-template-columns: repeat(2,auto);
-  }
-}
-@media screen and (max-width: 600px) {
-  .store{
+  .divremovebtn {
     width: 100%;
-     display: grid;
-    grid-template-columns: repeat(1,auto);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 600px) {
+  .container,
+  .prdouctCard,
+  .prodDisplay,
+  .productDisplay,
+  .cartbutton,
+  .Nav.Link,
+  .store-container,
+  .imgStore,
+  .prices,
+  .pricesbutton,
+  .pricesbutton button,
+  .removebtn,
+  .divremovebtn {
+    width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
-  .prices{
+  .cartdisplay {
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cartdisplay {
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media screen and (max-width: 900px) {
+  .store {
+    width: 200%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+@media screen and (max-width: 600px) {
+  .store {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+@media screen and (max-width: 900px) {
+  .prices {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-  }}
+  }
+}
 @media screen and (max-width: 600px) {
-.prices{
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-}}
-.searchInput{
+  .prices {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+}
+.searchInput {
   padding: 2px;
   width: 300px;
   background-color: var(--text-color);
   /* text-transform: capitalize; */
   border-radius: 20px;
 }
-.searchbtn{
+.searchbtn {
   padding: 4px;
   width: 150px;
   background-color: var(--text-color);
   border-radius: 20px;
   margin-top: 3px;
 }
-.checkout{
- padding: 10px;
- position: absolute;
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- width: 1000px;
- border-color: black;
- border-style: double;
- border-radius: 10px;
-margin: 30px;
+.checkout {
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  border-color: black;
+  border-style: double;
+  border-radius: 10px;
+  margin: 30px;
 }
-.checkoutGrid{
+.checkoutGrid {
   display: grid;
-  grid-template-columns: repeat(2,auto);
+  grid-template-columns: repeat(2, auto);
   gap: 2em;
   justify-content: space-between;
 }
-.formcheck, input.formcheck{
+.formcheck,
+input.formcheck {
   padding: 5px;
-  border: 10px solid black ;
-  border-style:double;
+  border: 10px solid black;
+  border-style: double;
   width: 400px;
-}.formcheck >input{
+}
+.formcheck > input {
   margin-right: 3px;
   width: calc(100% - 3px);
 }
-.checkout1{
+.checkout1 {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -512,10 +537,13 @@ margin: 30px;
   gap: 5em;
   color: var(--text-color);
 }
-table{
-  width:400px ;
+table {
+  width: 400px;
 }
-table,th, tr, td{
+table,
+th,
+tr,
+td {
   border: 3px;
   /* width: 30px; */
   border-style: double;
@@ -523,34 +551,34 @@ table,th, tr, td{
   padding: 5px;
   color: var(--text-color);
 }
-.tableDiv{
+.tableDiv {
   padding: 7px;
-border: 3px solid black; 
-border-style:dotted;
-border-radius: 20px;
-}
-.btnDisplay{
-display: flex;
-flex-direction: row;
- justify-content: space-around;
- align-items: center;
- gap: 4em;
-}
-.productDisplay{
+  border: 3px solid black;
+  border-style: dotted;
   border-radius: 20px;
 }
-.productDisplay:hover{
+.btnDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4em;
+}
+.productDisplay {
+  border-radius: 20px;
+}
+.productDisplay:hover {
   background-color: aqua;
 }
-.productdisplay{
+.productdisplay {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.btnBelow{
+.btnBelow {
   margin-top: 5px;
-  width:auto;
+  width: auto;
   height: 40px;
   background-color: var(--blue);
   border-color: black;
@@ -559,14 +587,14 @@ flex-direction: row;
   border-width: 4px;
   color: white;
 }
-.data{
-  background: url("./images/payments.png")no-repeat;
+.data {
+  background: url("./images/payments.png") no-repeat;
   background-size: cover;
   background-size: 300px 50px;
   width: 500px;
   height: 100px;
 }
-.checkFooter{
+.checkFooter {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -574,7 +602,7 @@ flex-direction: row;
   justify-items: center;
   margin-left: 200px;
 }
-h5{
+h5 {
   justify-content: center;
   align-items: center;
   font-size: 0.5em;
@@ -582,44 +610,127 @@ h5{
 }
 @media screen and (max-width: 900px) {
   .searchInput,
-.searchbtn,
-.checkout,
-.checkout1,
-table,
-table,th, tr, td,
-.btnDisplay,
-.productdisplay,
-.btnBelow,
-.data,
-.checkFooter,
-h5{
-width: 100%;
-}}
+  .searchbtn,
+  .checkout,
+  .checkout1,
+  table,
+  table,
+  th,
+  tr,
+  td,
+  .btnDisplay,
+  .productdisplay,
+  .btnBelow,
+  .data,
+  .checkFooter,
+  h5 {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
   .searchInput,
-.searchbtn,
-.checkout,
-.checkout1,
-table,
-table,th, tr, td,
-.btnDisplay,
-.productDisplay,
-.productdisplay,
-.btnBelow,
-.data,
-.checkFooter,
-h5{
-  width: 100%;
-}}
+  .searchbtn,
+  .checkout,
+  .checkout1,
+  table,
+  table,
+  th,
+  tr,
+  td,
+  .btnDisplay,
+  .productDisplay,
+  .productdisplay,
+  .btnBelow,
+  .data,
+  .checkFooter,
+  h5 {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 900px) {
-  .Cartpage,.carts{
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(1, auto);
-  }}
+  .Cartpage,
+  .carts {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
 @media screen and (max-width: 600px) {
-  .Cartpage,.carts{
+  .Cartpage,
+  .carts {
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(1, auto);
-}}
+  }
+}
+.panel {
+  display: flex;
+  flex-direction: row;
+  
+}
+.panelChild {
+  background-color: var(--blue);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 3px solid black;
+}
+.panelChild1 {
+  background-color: blue;
+  color: white;
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.Generalpanel{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  gap: 1em;
+}
+.admin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blue;
+  width: 100%;
+  height: auto;
+  gap: 3em;
+  margin: 0%;
+}
+.adminChild {
+  background-color: yellow;
+  color: black;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: black;
+  margin: 0px;
+  text-align: center;
+  text-decoration: solid;
+}
+.panelMember1{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: solid;
+  text-transform: uppercase;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

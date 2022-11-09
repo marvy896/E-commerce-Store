@@ -1,32 +1,34 @@
-import React, { FormEvent, useState } from "react";
+import React, { FormEvent, useEffect, useState } from "react";
 import Nav from "./nav";
 // import {Col, Row} from "react-bootstrap"
-import storeItems from "./src/items.json";
+// import storeItems from "./src/items.json";
 import StoreItems from "./src/components/StoreItems";
-import { StoreItemProps } from "./src/components/StoreItems";
+import { StoreItemProps, IItem } from './src/components/StoreItems';
 import { Link } from "react-router-dom";
+import { GetProducts } from "./src/database/frontEnd";
 
 export default function ProductCard() {
+  let [storeItems, setStoreItems] = useState<IItem[]>([]);
   let [sortItems, setSortItems] = useState("")
   let [maintext, setMainText] = useState("");
   let [text, setText] = useState("");
-  let [textDisplay, setTextDisplay] = useState<StoreItemProps[]>([]);
+  let [textDisplay, setTextDisplay] = useState<IItem[]>([]);
 
   //to sort prices
-  const SortPrd = (itemsArray?: StoreItemProps[]) => {
+  const SortPrd = (itemsArray?: IItem[]) => {
     itemsArray = itemsArray || storeItems;
-    let sortPrd:StoreItemProps[];
+    let sortPrd:IItem[];
     if( sortItems == "LH"){
-     sortPrd = itemsArray.sort((a, b) => a.price - b.price);
+     sortPrd = itemsArray.sort((a, b) => a.Price - b.Price);
     }
     else if( sortItems == "HL"){
-       sortPrd = itemsArray.sort((b, a) => a.price - b.price);
+       sortPrd = itemsArray.sort((b, a) => a.Price - b.Price);
     }
     else if ( sortItems == "AZ"){
-       sortPrd = itemsArray.sort((a, b) => a.nameProduct.localeCompare(b.nameProduct));
+       sortPrd = itemsArray.sort((a, b) => a.ProductName.localeCompare(b.ProductName));
     }
     else if ( sortItems == "ZA"){
-       sortPrd = itemsArray.sort((b, a) => a.nameProduct.localeCompare(b.nameProduct));
+       sortPrd = itemsArray.sort((b, a) => a.ProductName.localeCompare(b.ProductName));
     }
     else if (sortItems == ""){
       sortPrd = itemsArray
@@ -41,14 +43,21 @@ export default function ProductCard() {
     e.preventDefault();
     let searchPrd = storeItems.filter(
       (x) =>
-        x.nameProduct.toUpperCase().includes(text.toUpperCase()) ||
-        x.price <= parseInt(text)
+        x.ProductName.toUpperCase().includes(text.toUpperCase()) ||
+        x.Price <= parseInt(text)
     );
     setTextDisplay(SortPrd(searchPrd));
     setMainText(text);
   };
   let mappedArrays = maintext == "" ? storeItems : textDisplay
   SortPrd(mappedArrays);
+
+  useEffect(() =>{
+    GetProducts(({rows}) => {
+      setStoreItems(rows)
+    });
+  }, [])
+
   return (
     <div className="productdisplay">
       <Nav />
@@ -78,14 +87,9 @@ export default function ProductCard() {
       <div className="store">
         {(mappedArrays).map(
           (
-            item: JSX.IntrinsicAttributes & {
-              id: number;
-              nameProduct: string;
-              price: number;
-              imgUrl: string;
-            }
+            item: JSX.IntrinsicAttributes & IItem
           ) => (
-            <div key={item.id}>
+            <div key={item.ProductsId}>
               <StoreItems {...item} />
             </div>
           )

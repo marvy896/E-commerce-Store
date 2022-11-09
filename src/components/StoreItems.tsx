@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { GetProducts } from "../database/frontEnd";
 import useCart from '../hooks/hooks';
 
+export interface IItem {
+  ProductsId: number;
+  ProductName: string;
+  ImgUrl: string;
+  Price: number
+}
 
 export type StoreItemProps = {
   id: number;
@@ -8,31 +15,33 @@ export type StoreItemProps = {
   price: number;
   imgUrl: string;
 };
+
+
 export default function StoreItems({
-  id,
-  nameProduct,
-  price,
-  imgUrl,
-}: StoreItemProps) {
+  ProductsId,
+  ProductName,
+  Price,
+  ImgUrl,
+}: IItem) {
   // let quantity = 0;
   let carts = useCart()
-  let quantity = carts.getQuantity(id, nameProduct)
+  let quantity = carts.getQuantity(ProductsId, ProductName)
   let addToCart =() =>{
-    carts.increaseQuantity(id, nameProduct, price)
+    carts.increaseQuantity(ProductsId, ProductName, Price)
   }
   let removefromCart = () =>{
-    carts.decreaseQuantity(id, nameProduct)
+    carts.decreaseQuantity(ProductsId, ProductName)
   }
   let removeProduct =()=>{
-    carts.removeProduct(id)
+    carts.removeProduct(ProductsId)
   }
   return (
     <div className="store-container">
       {/* <img src={imgUrl} className="imgStore" /> */}
-      <div className="imgStore" style={{backgroundImage: `url(${imgUrl})`}}></div>
+      <div className="imgStore" style={{backgroundImage: `url(${ImgUrl})`}}></div>
       <div className="prices">
-        <h3>{nameProduct}</h3>
-        <h3>${price}</h3>
+        <h3>{ProductName}</h3>
+        <h3>${Price}</h3>
       </div>
       <div>
         {quantity ===0 ? (

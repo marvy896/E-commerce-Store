@@ -27,7 +27,7 @@ let quantityCart = cartinNav.getTotalquantity()
             <Link to="/cartpage">Cartpage</Link>
           </li>
           <li>
-            <Link to="/home">Admin</Link>
+            <Link to="/login">Admin</Link>
           </li>
         </ul>
         <button className="buttonNav">

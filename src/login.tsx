@@ -1,7 +1,8 @@
 import React, { FormEvent } from "react";
-import { json, Link } from "react-router-dom";
+import { json, Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const Navigate = useNavigate();
   let submitForm = (e: FormEvent) => {
     e.preventDefault();
     let validate = new FormData(e.target as HTMLFormElement);
@@ -14,7 +15,14 @@ export default function Login() {
       method: "POST",
       body: JSON.stringify(Values),
       headers: { "Content-type": "application/json; charset=UTF-8" },
-    }).then((status)=> console.log(status, "Successfully logged in"))
+    }).then((response) => {
+      console.log(response);
+      if (response.status == 200) {
+        console.log(response, "Successfully logged in", Navigate("/admin"));
+      } else {
+        (alert("Please put in the right details"));
+      }
+    });
   };
   return (
     <div className="login">

@@ -62,7 +62,6 @@
     "json-parse-even-better-errors": "^2.3.1",
     "json5": "^2.2.1",
     "lightningcss": "^1.16.0",
-    "lightningcss-win32-x64-msvc": "^1.16.0",
     "lines-and-columns": "^1.2.4",
     "lmdb": "^2.5.2",
     "mdn-data": "^2.0.14",
@@ -116,7 +115,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel index.html --open --port 8080",
-    "devStart": "nodemon ./src/database/server.js"
+    "devStart": "nodemon ./src/database/server.js",
+    "build": "parcel build index.html -d html"
   },
   "keywords": [],
   "author": "",

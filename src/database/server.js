@@ -14,6 +14,7 @@ app.use('/home', express.static('dist'))
 app.use('/checkout', express.static('dist'))
 app.use('/admin', express.static('dist'))
 app.use('/login', express.static('dist'))
+app.use('/productCard/imagepage', express.static('images'))
 
 
 

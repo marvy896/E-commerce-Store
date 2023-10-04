@@ -120,19 +120,3 @@ app.post('/deleteProducts',(req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
-//creating Database
-// const sqlite3 = require('sqlite3').verbose();
-//create a server object:
-// createServer(function (req, res) {
-//     if(req.url === '/products') {
-//         res.write("Hello Marvel")
-//         res.end();
-//     } else {
-//         res.writeHead(404);
-//         res.end();
-//     }
-//   res.write('Hello World!'); //write a response to the client
-//   res.end(); //end the response
-//   console.log(req.url)
-// }).listen(8080); //the server object listens on port 8080

@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 #darkMode {
-  background: transparent url("./images/moon.png") no-repeat;
+  /* background: transparent url("./images/moon.png") no-repeat; */
   background-size: 30px 30px;
   width: 32px;
   height: 32px;
@@ -46,7 +46,7 @@ body.dark {
   --background-color: var(--blue);
   --text-color: var(--white);
   --font-weight: 500;
-  --image: url("./images/fashion2.jpg");
+  /* --image: url("./images/fashion2.jpg"); */
 }
 h1 {
   color: var(--text-color);
@@ -192,7 +192,7 @@ section {
   }
 }
 .fashion1 {
-  background: url("./images/home1.jpg") no-repeat;
+  /* background: url("./images/home1.jpg") no-repeat; */
   background-size: 300px 400px;
   width: 300px;
   height: 400px;
@@ -201,7 +201,7 @@ section {
   border-color: black;
 }
 .fashion2 {
-  background: url("./images/home2.jpg") no-repeat;
+  /* background: url("./images/home2.jpg") no-repeat; */
   background-size: 300px 400px;
   width: 300px;
   height: 400px;
@@ -210,7 +210,7 @@ section {
   border-color: black;
 }
 .fashion3 {
-  background: url("./images/home3.jpg") no-repeat;
+  /* background: url("./images/home3.jpg") no-repeat; */
   background-size: 300px 400px;
   width: 300px;
   height: 400px;

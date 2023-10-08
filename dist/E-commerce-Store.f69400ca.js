@@ -39861,7 +39861,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images\\fashion1.jpg":[["fashion1.2e895541.jpg","images/fashion1.jpg"],"images/fashion1.jpg"],"./images\\cart.png":[["cart.6b493076.png","images/cart.png"],"images/cart.png"],"./images\\payments.png":[["payments.086e0a6b.png","images/payments.png"],"images/payments.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.tsx":[function(require,module,exports) {
+},{"./images\\moon.png":[["moon.e5be64d2.png","images/moon.png"],"images/moon.png"],"./images\\fashion1.jpg":[["fashion1.2e895541.jpg","images/fashion1.jpg"],"images/fashion1.jpg"],"./images\\fashion2.jpg":[["fashion2.0df28a5a.jpg","images/fashion2.jpg"],"images/fashion2.jpg"],"./images\\cart.png":[["cart.6b493076.png","images/cart.png"],"images/cart.png"],"./images\\home1.jpg":[["home1.234bfadd.jpg","images/home1.jpg"],"images/home1.jpg"],"./images\\home2.jpg":[["home2.badda488.jpg","images/home2.jpg"],"images/home2.jpg"],"./images\\home3.jpg":[["home3.c1115a8c.jpg","images/home3.jpg"],"images/home3.jpg"],"./images\\payments.png":[["payments.086e0a6b.png","images/payments.png"],"images/payments.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {

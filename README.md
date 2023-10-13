@@ -31,6 +31,16 @@ I set up a Node.js server  *Server.js* to handle backend functionalities. Develo
 Database Integration:
 I used *mysql* to store and retrieve product data, user information, and order details. Implement data models and connect the backend server with the database for seamless data management.
 
+# API 
+post createTable/newTable //allows you to create a new table
+post /validateLogin  // validates users on login
+get /products //used to get all the products from the database
+get /product/:ID // used to search fo a particular product with the ID
+post /add   // used to add products to the product catalog
+post /updateProducts //used to update products
+post /deleteProducts  //used to delete products
+
+![Alt text](db.png)
 # Challenge
 Building an E-commerce website using React, TypeScript, Node.js, and CSS offers a powerful and flexible foundation for creating a feature-rich online store. The combination of frontend and backend technologies allows for a responsive and interactive user interface, efficient data management, and seamless integration with external services.
 
